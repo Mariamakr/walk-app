@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 9 front-end:
+node.js - npm
+npx create-react-app
+cd project_name
+npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+erase React app logo 
+and applied css for that
 
-## Available Scripts
+# 10 create the basic front end views:
 
-In the project directory, you can run:
+create the header apply the desired css
+create the Place list and Place details with react hooks
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 11 Fetch data from the api:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Do do that i have to use useEffect hook from react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+now in order not to have that error related to CORS i go back to py charm and i do:
+pip install django-cors-headers
+and then go to settings. py and put the corsheaders to app settings and to middleware
 
-### `npm run build`
+# 12 Create components:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+place-list.js
+return the city
+place-details.js
+return the city and the location
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+create rating
+download font awesome for react
+aply the specific icon 
+adjust the code so is functional
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+make a rating (request from the api)
+use hook useState to color the stars i want by hovering on them 
 
-### `npm run eject`
+# 13 Make rating functional:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+i use fetch data the same way i use for get the data but i use method post 
+i change the url and make it dynamic so it will store an id to the api
+and also i create a body in which i use JSON.stringify
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 14 make the form for updating creating a new place from the front end:
+create place-form.js
+insert edit and delete button from font aswome
+create an update button
+use the null for hacking the displayed output when clicked
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 15 api-services:
+create a service to put all the fetch data all together. (store the api services)
+created based on the class.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+each function i make i go to api-services.py to root it with my api 
+update, create, delete
 
-## Learn More
+# 16 Create a login page:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+So i want to change the displayed app not to come up as the first thing someone see
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I will use router 
 
-### Code Splitting
+npm install react-router-dom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+after the installation i change the index.js
 
-### Analyzing the Bundle Size
+then create the input for username and password a s created before for the location and city
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+create the loginClicked
 
-### Making a Progressive Web App
+in the response i can use the token and then to use cookies to store the credentials for a next login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+# 17. I create a console.log for the token i have when i try to login and i connect the button with the /places page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+to use cookies i install
+npm install reatc-cookie
 
-### Deployment
+use cookies now to store token
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+fix the bug where it redirects me immediatly to the /.places page:
+To log in again we have to go to inspect -> application and delete the token from the resaults
 
-### `npm run build` fails to minify
+# 18. Create a ternary operator for login or register and create the buttons and functions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+i create a log out function with the same logic
+
+i use fontawsome for the icon and then i delete the token onClick of the icon to return back to the starting point
+
+ 
+
+
+
+
+
