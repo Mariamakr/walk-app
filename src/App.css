@@ -1,0 +1,123 @@
+:root{
+  --white : #fff;
+  --wheat: wheat;
+  --grey: #282c34;
+  --orange: #f9c25d;
+  --brown: #7c3e3e;
+
+}
+.App {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--grey);
+  color: var(--wheat);
+
+
+}
+
+.App-header {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.login-container{
+  width: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 25%;
+
+}
+
+input{
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0px;
+  font-size: 0.8rem;
+  border: 5px double var(--wheat);
+}
+
+button{
+  color: var(--grey);
+  background-color: var(--wheat);
+  box-shadow: 2px 3px 8px var(--wheat);
+  border: none;
+  padding: 10px 10px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+button:disabled{
+  color: var(--wheat);
+  background-color: var(--grey);
+  cursor: no-drop;
+}
+
+/* .comfirmation:passworded{
+  color: green;
+  background-color: aqua;
+
+} */
+
+h1 .fa-plane-arrival, span{
+  color: var(--white);
+  text-shadow: 3px 3px 3px var(--white);
+  transform: rotate(-20deg);
+}
+
+
+.fa-arrow-right-from-bracket{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.credential-icons{
+  margin: 0px 20px;
+  font-size: 1.3rem;
+}
+
+.add-place{
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+
+.layout{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  
+
+}
+
+.list{
+  border: 5px solid var(--wheat);
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+}
+
+.list svg{
+  font-size: 1.2rem;
+  margin:16px 16px
+}
+
+.orange{
+  color: var(--orange);
+}
+
+.brown{
+  color: var(--brown);
+}
+
+.rate-container{
+  border-top: 2px solid var(--brown);
+  margin: 20px ;
+}
+
+
+.rate-container .fa-star {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
