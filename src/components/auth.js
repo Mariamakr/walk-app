@@ -49,7 +49,7 @@ function Auth(){
                         value={username} onChange={ eve => setUsername(eve.target.value)}></input><br/>
                         <label htmlFor='password'>Password</label><br/>
                         <FontAwesomeIcon className="credential-icons" icon={faLockOpen}></FontAwesomeIcon>
-                        <input id="password" type="text" placeholder='password'
+                        <input id="password" type="password" placeholder='password'
                         value={password} onChange={eve => setPassword(eve.target.value)}></input><br/> 
                         {/* .replace(password, '******')                                */}
                         <button onClick={loginClicked} disabled={isDisabled}>Login</button> 
